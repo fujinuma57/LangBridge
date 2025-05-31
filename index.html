@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>GlobalTalk – オンライン語学学習サービス</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="lang-selector.js"></script>
+</head>
+<body>
+
+<nav class="top-nav">
+  <!-- UI言語切替 -->
+  <ul class="lang-switch">
+    <li><a href="index.html">日本語</a></li>
+    <li><a href="index_en.html">English</a></li>
+    <li><a href="index_cn.html">中文</a></li>
+  </ul>
+
+  <!-- 学びたい言語セレクト -->
+  <div class="learn-select">
+    <label for="learnLang">Learn:</label>
+    <select id="learnLang">
+      <option value="ja">日本語</option>
+      <option value="en">English</option>
+      <option value="cn">中文</option>
+    </select>
+  </div>
+</nav>
+
+<!-- 1. Hero Section -->
+<section class="hero">
+  <h1>AIと<span id="currentLearn"></span>講師がサポートする新時代の<span id="currentLearn"></span>学習</h1>
+  <p>あなた専用の学習プランを最短3日でAIが設計します。</p>
+  <a href="#contact"><button class="cta-button">お問い合わせ・無料体験レッスンはこちら</button></a>
+</section>
+
+<!-- 2. 特長セクション -->
+<section class="features">
+  <div class="feature">
+    <img src="images/speed.jpg" alt="スピード" class="feature-img" loading="lazy" width="200" height="150">
+    <h3>圧倒的スピード</h3>
+    <p>最短3日で学習スタート。</p>
+  </div>
+  <div class="feature">
+    <img src="images/design.jpg" alt="デザイン性" class="feature-img" loading="lazy" width="200" height="150">
+    <h3>高いデザイン性</h3>
+    <p>AI画像×Figmaで独自ビジュアル。</p>
+  </div>
+  <div class="feature"> 
+    <img src="images/cost.jpg" alt="コスト削減" class="feature-img" loading="lazy" width="200" height="150">
+    <h3>コスト削減</h3>
+    <p>従来の半額以下で高品質レッスン。</p>
+  </div>
+</section>
+
+<!-- 3. サービスフロー -->
+<section class="flow">
+  <div class="flow-step">
+    <img src="images/step1_hearing.jpg" alt="ヒアリング" class="feature-img" loading="lazy" width="200" height="150">
+    <h3>1. 無料ヒアリング</h3>
+    <p>AIと講師があなたの目標を分析。</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step2_planning.jpg" alt="プラン設計" class="feature-img" loading="lazy" width="200" height="150">
+    <h3>2. プラン設計（AI）</h3>
+    <p>最適な学習プランを自動生成。</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step3_lesson.jpg" alt="レッスン開始" class="feature-img" loading="lazy" width="200" height="150">
+    <h3>3. レッスン開始</h3>
+    <p>オンラインでのマンツーマン指導。</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step4_feedback.jpg" alt="フィードバック" class="feature-img" loading="lazy" width="200" height="150">
+    <h3>4. フィードバック</h3>
+    <p>AIが学習進捗を解析し次回に活かす。</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step5_review.jpg" alt="成果レビュー" class="feature-img" loading="lazy" width="200" height="150">
+    <h3>5. 成果レビュー</h3>
+    <p>成果を可視化し次フェーズに移行。</p>
+  </div>
+</section>
+
+<!-- 4. お客様の声 -->
+<section class="testimonials">
+  <div class="testimonial">
+    <img src="images/会社員.jpg" alt="田中花子さん" class="testimonial-img"　loading="lazy" width="200" height="150">
+    <p class="stars">★★★★★</p>
+    <p>「AIプランが的確で、短期間で成果を実感しました！」</p>
+    <p>— 田中 花子／会社員</p>
+  </div>
+  <div class="testimonial">
+    <img src="images/学生.jpg" alt="鈴木太郎さん" class="testimonial-img"　loading="lazy" width="200" height="150">
+    <p class="stars">★★★★☆</p>
+    <p>「講師のフィードバックが丁寧。学習意欲が続きます。」</p>
+    <p>— 鈴木 太郎／学生</p>
+  </div>
+  <div class="testimonial">
+    <img src="images/主婦.jpg" alt="佐藤直子さん" class="testimonial-img"　loading="lazy" width="200" height="150">
+    <p class="stars">★★★★★</p>
+    <p>「レッスン後にAIレポートが届くのが便利！」</p>
+    <p>— 佐藤 直子／主婦</p>
+  </div>
+</section>
+
+<!-- 5. 料金プラン -->
+<section class="pricing">
+  <div class="plan">
+    <h3>ライトプラン</h3>
+    <p class="price">¥5,000/月</p>
+    <p>週1回レッスン</p>
+  </div>
+  <div class="plan">
+    <h3>スタンダードプラン</h3>
+    <p class="price">¥9,000/月</p>
+    <p>週3回レッスン</p>
+  </div>
+  <div class="plan">
+    <h3>プレミアムプラン</h3>
+    <p class="price">¥12,000/月</p>
+    <p>毎日集中レッスン</p>
+  </div>
+</section>
+
+<!-- 6. FAQ -->
+<section class="faq">
+  <div class="faq-item">
+    <h4>Q. 途中でプラン変更できますか？</h4>
+    <p>A. いつでもアップ／ダウン可能です。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. AIのみで学習可能ですか？</h4>
+    <p>A. AI単体モードも対応しています。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. 他の言語も学べますか？</h4>
+    <p>A. 英語・中国語・日本語対応・今後言語を増やしていく予定です。</p>
+  </div>
+</section>
+
+<!-- 7. お問い合わせフォーム --> 
+<section class="contact" id="contact">
+  <h2>お問い合わせ・無料体験申込み</h2>
+  <form id="contactForm">
+    <label>お名前<input type="text" name="name" required></label>
+    <label>メール<input type="email" name="email" required></label>
+    <label>ご要望<textarea name="message" rows="4"></textarea></label>
+    <button type="submit" class="submit-button">送信する</button>
+  </form>
+    <p id="contactSuccess" style="display: none; color: green;">
+    ✅ お問い合わせを送信しました！
+  </p>
+</section>
+
+ <script src="script.js"></script>
+
+
+
+</body>
+</html>
