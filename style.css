@@ -1,0 +1,327 @@
+/* --- リセットと基本設定 --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+section {
+  width: 100%;
+  padding: 80px 40px;
+}
+
+/* --- ヒーローセクション --- */
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #0066cc, #66aaff);
+  color: white;
+  padding: 100px 40px;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.hero button {
+  background: #005fa3;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* --- 特徴セクション --- */
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.feature {
+  flex: 1 1 33.333%;
+  text-align: center;
+  padding: 60px 20px;
+}
+.feature-img {
+  width: 250px; 
+  height: auto;
+  margin-bottom: 24px;
+}
+.feature h3 {
+  font-size: 1.8rem; 
+  margin-bottom: 16px;
+}
+.feature p {
+  font-size: 1.3rem; 
+}
+
+/* --- サービスフロー --- */
+.flow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.flow-step {
+  flex: 1 1 20%;
+  text-align: center;
+  padding: 60px 20px;
+}
+.flow-img {
+  width: 250px; 
+  height: auto;
+  margin-bottom: 16px;
+}
+.flow-step h3 {
+  font-size: 1.6rem; 
+  margin-bottom: 14px;
+}
+.flow-step p {
+  font-size: 1.25rem; 
+}
+
+/* --- 料金プラン --- */
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.plan {
+  flex: 1 1 280px;
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 24px;
+  border-radius: 8px;
+}
+.plan .price {
+  font-size: 28px;
+  color: #0077cc;
+  margin-bottom: 12px;
+}
+
+/* --- お客様の声 --- */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+.testimonial {
+  flex: 1 1 calc(33.333% - 32px);
+  min-width: 240px;
+  background-color: #fdfdfd;
+  padding: 24px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px;
+}
+.stars {
+  color: gold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.testimonial p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* --- FAQ --- */
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.faq-item {
+  margin-bottom: 24px;
+}
+.faq-item h4 {
+  color: #0077cc;
+  margin-bottom: 8px;
+}
+
+/* --- お問い合わせフォーム --- */
+.contact {
+  background: #f8f8f8;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: auto;
+}
+.contact label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.submit-button {
+  align-self: center;
+  padding: 12px 30px;
+  border: none;
+  background: #0077cc;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background: #005fa3;
+}
+.success-message {
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px; 
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  flex-wrap: wrap; 
+  position: relative;
+  z-index: 10;
+}
+
+.lang-switch {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.lang-switch li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.learn-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.learn-select label {
+  font-weight: bold;
+}
+
+#learnLang {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ② レスポンシブ調整 */
+@media screen and (max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .lang-switch {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .lang-switch li {
+    list-style: none;
+  }
+
+  .learn-select {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .cta-button {
+    width: 90%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .features,
+  .flow,
+  .pricing,
+  .testimonials,
+  .faq,
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .feature,
+  .flow-step,
+  .plan,
+  .testimonial,
+  .faq-item {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .feature-img,
+  .flow-img,
+  .testimonial-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form input,
+  form textarea,
+  .submit-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

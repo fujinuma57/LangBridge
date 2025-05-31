@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>GlobalTalk – Online Language Learning</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="lang-selector.js"></script>
+</head>
+<body>
+
+<nav class="top-nav">
+  <ul class="lang-switch">
+    <li><a href="index.html">日本語</a></li>
+    <li><a href="index_en.html" class="active">English</a></li>
+    <li><a href="index_cn.html">中文</a></li>
+  </ul>
+  <div class="learn-select">
+    <label for="learnLang">Learn:</label>
+    <select id="learnLang">
+      <option value="ja">Japanese</option>
+      <option value="en" selected>English</option>
+      <option value="cn">Chinese</option>
+    </select>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Next-gen <span id="currentLearn">English</span> learning powered by AI & native tutors</h1>
+  <p>Your personalized study plan created by AI in just 3 days.</p>
+   <a href="#contact"><button class="cta-button">Try Free Lesson</button></a>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <img src="images/speed.jpg" alt="Speed" class="feature-img">
+    <h3>Lightning Fast</h3>
+    <p>Start learning within 3 days.</p>
+  </div>
+  <div class="feature">
+    <img src="images/design.jpg" alt="Design" class="feature-img">
+    <h3>Modern Design</h3>
+    <p>Unique visuals with AI and Figma.</p>
+  </div>
+  <div class="feature">
+    <img src="images/cost.jpg" alt="Cost Effective" class="feature-img">
+    <h3>Cost Saving</h3>
+    <p>High-quality lessons at half the price.</p>
+  </div>
+</section>
+
+<section class="flow">
+  <div class="flow-step">
+    <img src="images/step1_hearing.jpg" alt="Free Hearing" class="flow-img">
+    <h3>1. Free Consultation</h3>
+    <p>AI and tutors analyze your goals.</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step2_planning.jpg" alt="Plan Design" class="flow-img">
+    <h3>2. AI Plan Design</h3>
+    <p>Get a tailor-made learning plan.</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step3_lesson.jpg" alt="Start Lesson" class="flow-img">
+    <h3>3. Start Lessons</h3>
+    <p>1-on-1 online instruction.</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step4_feedback.jpg" alt="Feedback" class="flow-img">
+    <h3>4. Feedback</h3>
+    <p>AI analyzes progress and adjusts lessons.</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step5_review.jpg" alt="Review" class="flow-img">
+    <h3>5. Progress Review</h3>
+    <p>Visualize your results and move forward.</p>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="plan">
+    <h3>Light Plan</h3>
+    <p class="price">¥5,000/month</p>
+    <p>1 lesson/week</p>
+  </div>
+  <div class="plan">
+    <h3>Standard Plan</h3>
+    <p class="price">¥9,000/month</p>
+    <p>3 lessons/week</p>
+  </div>
+  <div class="plan">
+    <h3>Premium Plan</h3>
+    <p class="price">¥12,000/month</p>
+    <p>Daily intensive lessons</p>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="testimonial">
+    <img src="images/会社員.jpg" alt="Hanako Tanaka" class="testimonial-img">
+    <p class="stars">★★★★★</p>
+    <p>“The AI-designed plan was perfect. I saw results quickly!”</p>
+    <p>— Hanako Tanaka / Office Worker</p>
+  </div>
+  <div class="testimonial">
+    <img src="images/学生.jpg" alt="Taro Suzuki" class="testimonial-img">
+    <p class="stars">★★★★☆</p>
+    <p>“The tutor's feedback is so thoughtful. Keeps me motivated.”</p>
+    <p>— Taro Suzuki / Student</p>
+  </div>
+  <div class="testimonial">
+    <img src="images/主婦.jpg" alt="Naoko Sato" class="testimonial-img">
+    <p class="stars">★★★★★</p>
+    <p>“I love receiving AI reports after every lesson!”</p>
+    <p>— Naoko Sato / Homemaker</p>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="faq-item">
+    <h4>Q. Can I change my plan later?</h4>
+    <p>A. Yes, you can upgrade or downgrade anytime.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. Can I learn with AI only?</h4>
+    <p>A. Yes, we support AI-only learning mode.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. Do you offer other languages?</h4>
+    <p>A. We support English, Chinese, and Japanese, with more coming soon.</p>
+  </div>
+</section>
+
+<!-- 7. Contact Form -->
+<section class="contact" id="contact">
+  <h2>Contact / Free Trial Application</h2>
+  <form id="contactForm">
+    <label>Your Name<input type="text" name="name" required></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>Your Message<textarea name="message" rows="4"></textarea></label>
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+  <p id="contactSuccessEn" style="display: none; color: green;">
+    ✅ Your message has been sent!
+  </p>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
+

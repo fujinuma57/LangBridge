@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlobalTalk – 在线语言学习服务</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="lang-selector.js"></script>
+</head>
+<body>
+
+<nav class="top-nav">
+  <ul class="lang-switch">
+    <li><a href="index.html">日本語</a></li>
+    <li><a href="index_en.html">English</a></li>
+    <li><a href="index_cn.html" class="active">中文</a></li>
+  </ul>
+
+  <div class="learn-select">
+    <label for="learnLang">学习语言：</label>
+    <select id="learnLang">
+      <option value="ja">日语</option>
+      <option value="en">英语</option>
+      <option value="cn" selected>中文</option>
+    </select>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>AI 和 <span id="currentLearn"></span> 教师支持的新一代 <span id="currentLearn"></span> 学习</h1>
+  <p>AI 将在最短 3 天内为您量身定制学习计划。</p>
+   <a href="#contact"><button class="cta-button">申请免费试听课程</button></a>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <img src="images/speed.jpg" alt="快速" class="feature-img">
+    <h3>极快速度</h3>
+    <p>最快 3 天开始学习。</p>
+  </div>
+  <div class="feature">
+    <img src="images/design.jpg" alt="设计性" class="feature-img">
+    <h3>高设计感</h3>
+    <p>AI 图像与 Figma 实现独特视觉。</p>
+  </div>
+  <div class="feature">
+    <img src="images/cost.jpg" alt="节省成本" class="feature-img">
+    <h3>成本节省</h3>
+    <p>以不到一半的价格提供高质量课程。</p>
+  </div>
+</section>
+
+<section class="flow">
+  <div class="flow-step">
+    <img src="images/step1_hearing.jpg" alt="听取需求" class="flow-img">
+    <h3>1. 免费听取需求</h3>
+    <p>AI 与教师分析您的目标。</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step2_planning.jpg" alt="规划制定" class="flow-img">
+    <h3>2. 学习计划制定（AI）</h3>
+    <p>自动生成最佳学习计划。</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step3_lesson.jpg" alt="开始上课" class="flow-img">
+    <h3>3. 开始上课</h3>
+    <p>在线一对一授课。</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step4_feedback.jpg" alt="反馈分析" class="flow-img">
+    <h3>4. 反馈分析</h3>
+    <p>AI 分析学习进度并用于下一课。</p>
+  </div>
+  <div class="flow-step">
+    <img src="images/step5_review.jpg" alt="成果回顾" class="flow-img">
+    <h3>5. 成果回顾</h3>
+    <p>可视化成果并进入下一阶段。</p>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="plan">
+    <h3>基础计划</h3>
+    <p class="price">¥5,000 / 月</p>
+    <p>每周一次课程</p>
+  </div>
+  <div class="plan">
+    <h3>标准计划</h3>
+    <p class="price">¥9,000 / 月</p>
+    <p>每周三次课程</p>
+  </div>
+  <div class="plan">
+    <h3>高级计划</h3>
+    <p class="price">¥12,000 / 月</p>
+    <p>每天密集课程</p>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="testimonial">
+    <img src="images/会社員.jpg" alt="田中花子" class="testimonial-img">
+    <p class="stars">★★★★★</p>
+    <p>“AI 的学习计划非常精准，我短时间就看到了成果！”</p>
+    <p>— 花子 田中／公司职员</p>
+  </div>
+  <div class="testimonial">
+    <img src="images/学生.jpg" alt="鈴木太郎" class="testimonial-img">
+    <p class="stars">★★★★☆</p>
+    <p>“老师的反馈很细致，让我一直保持学习动力。”</p>
+    <p>— 太郎 鈴木／学生</p>
+  </div>
+  <div class="testimonial">
+    <img src="images/主婦.jpg" alt="佐藤直子" class="testimonial-img">
+    <p class="stars">★★★★★</p>
+    <p>“课程结束后收到 AI 报告，非常方便！”</p>
+    <p>— 直子 佐藤／家庭主妇</p>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="faq-item">
+    <h4>Q. 可以中途更改计划吗？</h4>
+    <p>A. 任何时候都可以升级或降级。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. 只使用 AI 也能学习吗？</h4>
+    <p>A. 也支持只使用 AI 模式。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q. 可以学习其他语言吗？</h4>
+    <p>A. 支持英语、中文、日语，未来将增加更多语言。</p>
+  </div>
+</section>
+
+<!-- 7. 联系表单 -->
+<section class="contact" id="contact">
+  <h2>联系我们 / 免费体验申请</h2>
+ <form id="contactForm">
+    <label>姓名<input type="text" name="name" required></label>
+    <label>电子邮箱<input type="email" name="email" required></label>
+    <label>留言内容<textarea name="message" rows="4"></textarea></label>
+    <button type="submit" class="submit-button">提交</button>
+  </form>
+  <p id="contactSuccessZh" style="display: none; color: green;">
+    ✅ 您的信息已发送！
+  </p>
+</section>
+<script src="script.js"></script>
+
+
+</body>
+</html>
